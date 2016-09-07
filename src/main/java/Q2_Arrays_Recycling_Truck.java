@@ -55,13 +55,7 @@ public class Q2_Arrays_Recycling_Truck {
 
     // Ask user for number of crates for each house. Store in array and return this array.
     public static int[] getRecyclingPerHouse(int houses) {
-        //return new int[0];
-        int[] h = new int[houses];
-        for (int x = 0 ; x < houses ; x++) {
-            h[x] = numberScanner.nextInt();
-        }
-
-        return h;
+        return null;
     }
 
     //Add up all of the numbers in the array and return that
@@ -76,11 +70,12 @@ public class Q2_Arrays_Recycling_Truck {
 
     //Which is the smallest number in the array?
     public static int calculateMin(int[] cratesPerHouse) {
-        return 0;
+       return 0;
+
     }
 
     //Use the array to figure out which house number - or array element number - has the most recycling
     public static int calculateHouseWithMostRecycling(int[] cratesPerHouse) {
-        return 0;
+       return 0;
     }
 }
