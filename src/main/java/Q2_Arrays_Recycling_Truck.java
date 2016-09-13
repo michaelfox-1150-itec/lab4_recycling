@@ -55,27 +55,56 @@ public class Q2_Arrays_Recycling_Truck {
 
     // Ask user for number of crates for each house. Store in array and return this array.
     public static int[] getRecyclingPerHouse(int houses) {
-        return null;
-    }
+        int crates[] = new int[houses];
+        for (int house = 0; house < houses; house++) {
+            System.out.println("How many crates for " + house);
+            int crate = numberScanner.nextInt();
+            crates[house] = crate;
 
+
+        }
+        return crates;
+    }
     //Add up all of the numbers in the array and return that
     public static int calculateTotal(int[] cratesPerHouse) {
-        return 0;
+        int sum = 0;
+        for (int x = 0; x < cratesPerHouse.length ; x++){
+            sum = sum + cratesPerHouse[x];
+       }
+    return sum;
     }
-
     //Which is the largest number in the array?
     public static int calculateMax(int[] cratesPerHouse) {
-        return 0;
+        int largest = Integer.MIN_VALUE;
+        for (int x = 0 ; x < cratesPerHouse.length ; x++)
+            if (cratesPerHouse[x] > largest){
+            largest = cratesPerHouse[x];
+            }
+            return largest;
+
     }
 
     //Which is the smallest number in the array?
     public static int calculateMin(int[] cratesPerHouse) {
-       return 0;
+        int smallest = Integer.MAX_VALUE;
+        for (int x = 0 ; x < cratesPerHouse.length ; x++)
+            if (cratesPerHouse[x] < smallest){
+            smallest = cratesPerHouse[x];
+            }
+       return smallest;
 
     }
 
     //Use the array to figure out which house number - or array element number - has the most recycling
     public static int calculateHouseWithMostRecycling(int[] cratesPerHouse) {
-       return 0;
+
+        int houseMost = ;
+        for (int x = 0 ; x < cratesPerHouse.length ; x++)
+
+
+
+
+
+        return 0;
     }
 }
